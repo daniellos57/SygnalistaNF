@@ -74,6 +74,12 @@
 	  <Folder Include="Platforms\Android\Resources\drawable\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Pages\Developed.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerExceptionSygnalistaNFHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>

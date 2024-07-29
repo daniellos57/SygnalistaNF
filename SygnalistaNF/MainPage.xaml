@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SygnalistaNF.MainPage">
 
-    <ScrollView>
+    <Grid>
         <StackLayout Padding="20">
-
+          
             <!-- Tytuł na górze -->
             <Label Text="Sygnalista"
                    FontSize="36"
@@ -38,6 +38,7 @@
                     Placeholder="Wpisz tekst tutaj"
                    FontSize="18"
                    Margin="0,20,0,0" />
+            <Button Text="Dodaj zdjęcie" Clicked="OnAddAttachmentButtonClicked"/>
             <Button Text="Wyślij"
                     FontSize="18"
                     Margin="0,20,0,0"
@@ -46,7 +47,13 @@
                     CornerRadius="10"
                     HorizontalOptions="Center"
                     Clicked="OnSendButtonClicked" />
-
+            
         </StackLayout>
-    </ScrollView>
+        <ActivityIndicator x:Name="ActivityIndicator"
+                           IsRunning="False"
+                           Color="LightPink"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           IsVisible="False"/>
+    </Grid>
 </ContentPage>
