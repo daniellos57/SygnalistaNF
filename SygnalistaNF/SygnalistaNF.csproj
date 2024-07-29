@@ -80,6 +80,6 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerExceptionSygnalistaNFHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerExceptionSygnalistaNFHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionSygnalistaNFHideInfoBar="True" XamarinHotReloadGenericExceptionInfoBarSygnalistaNFHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>
