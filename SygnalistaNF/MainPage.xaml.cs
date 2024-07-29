@@ -32,8 +32,8 @@ namespace SygnalistaNF
 
             // Tworzenie wiadomości e-mail
              var message = new MimeMessage();
-             message.From.Add(new MailboxAddress("Syngalista", "sygnalista.gal.anonim@gmail.com"));
-             message.To.Add(new MailboxAddress("Odbiorca", "krzysztof.blicharz@infopower.pl"));
+             message.From.Add(new MailboxAddress("Syngalista", "PRIVATE"));
+             message.To.Add(new MailboxAddress("Odbiorca", "PRIVATE"));
              message.Subject = "Donos";
              message.Body = new TextPart("plain")
              {
@@ -49,7 +49,7 @@ namespace SygnalistaNF
                 try
                 {
                     await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                    await client.AuthenticateAsync("sygnalista.gal.anonim@gmail.com", "bccm oogr uzct jtyi");
+                    await client.AuthenticateAsync("PRIVATE");
                     await client.SendAsync(message);
                     await client.DisconnectAsync(true);
                      await DisplayAlert("Wiadomość", "E-mail został wysłany!", "OK");
